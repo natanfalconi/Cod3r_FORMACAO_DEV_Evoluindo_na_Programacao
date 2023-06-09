@@ -1,9 +1,10 @@
+//otimizando processos
 function criarData(dia, mes, ano) {
     return {
-        dia: dia,
-        mes: mes,
+        dia, // quando o valor é igual a chave, pode-se retirar o valor
+        mes,
         ano: ano,
-        formatar: function () {
+        formatar() {
             return `${this.dia}/${this.mes}/${this.ano}`
         }
     }
